@@ -126,7 +126,7 @@ int main(void)
 
 		IndexBuffer ibo(indices, sizeof(indices) / sizeof(unsigned int));
 
-		Shader shader("res/shaders/LightingCube.shader");
+		Shader shader("res/shaders/Diffuse.shader");
 		shader.Bind();
 
 		int textures[6] = { 0,1,2,3,4,5 };
@@ -179,38 +179,6 @@ int main(void)
 			ImGui_ImplOpenGL3_NewFrame();
 			ImGui_ImplGlfw_NewFrame();
 			ImGui::NewFrame();
-
-			/*if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
-				lightSrc.Translate(glm::vec3(0.0f, 0.0f, speed));
-			if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
-				lightSrc.Translate(glm::vec3(0.0f, 0.0f, -speed));
-			if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
-				lightSrc.Translate(glm::vec3(-speed, 0.0f, 0.0f));
-			if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
-				lightSrc.Translate(glm::vec3(speed, 0.0f, 0.0f));
-			if (glfwGetKey(window, GLFW_KEY_O) == GLFW_PRESS)
-				lightSrc.Translate(glm::vec3(0.0f, speed, 0.0f));
-			if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS)
-				lightSrc.Translate(glm::vec3(0.0f, -speed, 0.0f));
-
-			if (glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS)
-				lookDir = glm::rotate(lookDir, glm::radians(rotateSpeed), glm::vec3(1.0f, 0.0f, 0.0f));
-			if (glfwGetKey(window, GLFW_KEY_N) == GLFW_PRESS)
-				lookDir = glm::rotate(lookDir, glm::radians(rotateSpeed), glm::vec3(0.0f, 1.0f, 0.0f));
-			if (glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS)
-				lookDir = glm::rotate(lookDir, glm::radians(rotateSpeed), glm::vec3(0.0f, 0.0f, 1.0f));
-
-			cube.SetLookDir(lookDir);
-
-			if (glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS)
-				cube.Rotate(glm::vec3(rotateSpeed, 0.0f, 0.0f));
-			if (glfwGetKey(window, GLFW_KEY_N) == GLFW_PRESS)
-				cube.Rotate(glm::vec3(0.0f, rotateSpeed, 0.0f));
-			if (glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS)
-				cube.Rotate(glm::vec3(0.0f, 0.0f, rotateSpeed));
-
-			glm::vec3 lookDir = cube.GetLookDir();
-			std::cout << lookDir.x << " " << lookDir.y << " " << lookDir.z << std::endl;*/
 
 			grassTex.Bind(0);
 			haoTex1.Bind(1);

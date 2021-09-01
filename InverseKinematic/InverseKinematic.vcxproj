@@ -157,15 +157,6 @@
     <ClCompile Include="src\IndexBuffer.cpp" />
     <ClCompile Include="src\Renderer.cpp" />
     <ClCompile Include="src\Shader.cpp" />
-    <ClCompile Include="src\tests\Test.cpp" />
-    <ClCompile Include="src\tests\Test3D.cpp" />
-    <ClCompile Include="src\tests\TestBatch.cpp" />
-    <ClCompile Include="src\tests\TestBatchTexture.cpp" />
-    <ClCompile Include="src\tests\TestCamera.cpp" />
-    <ClCompile Include="src\tests\TestClearColor.cpp" />
-    <ClCompile Include="src\tests\TestDynamic.cpp" />
-    <ClCompile Include="src\tests\TestLighting.cpp" />
-    <ClCompile Include="src\tests\TestTexture2D.cpp" />
     <ClCompile Include="src\Texture.cpp" />
     <ClCompile Include="src\vendor\imgui\imgui.cpp" />
     <ClCompile Include="src\vendor\imgui\imgui_demo.cpp" />
@@ -185,15 +176,6 @@
     <ClInclude Include="src\IndexBuffer.h" />
     <ClInclude Include="src\Renderer.h" />
     <ClInclude Include="src\Shader.h" />
-    <ClInclude Include="src\tests\Test.h" />
-    <ClInclude Include="src\tests\Test3D.h" />
-    <ClInclude Include="src\tests\TestBatch.h" />
-    <ClInclude Include="src\tests\TestBatchTexture.h" />
-    <ClInclude Include="src\tests\TestCamera.h" />
-    <ClInclude Include="src\tests\TestClearColor.h" />
-    <ClInclude Include="src\tests\TestDynamic.h" />
-    <ClInclude Include="src\tests\TestLighting.h" />
-    <ClInclude Include="src\tests\TestTexture2D.h" />
     <ClInclude Include="src\Texture.h" />
     <ClInclude Include="src\vendor\glm\common.hpp" />
     <ClInclude Include="src\vendor\glm\exponential.hpp" />
@@ -233,12 +215,7 @@
     <ClInclude Include="src\VertexBufferLayout.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\shaders\Basic.shader" />
-    <None Include="res\shaders\BatchColor.shader" />
-    <None Include="res\shaders\BatchTexture.shader" />
-    <None Include="res\shaders\ColorPyramid.shader" />
-    <None Include="res\shaders\LightingCube.shader" />
-    <None Include="res\shaders\TextureCube.shader" />
+    <None Include="res\shaders\Diffuse.shader" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\textures\grass.png" />
