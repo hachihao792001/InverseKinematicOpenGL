@@ -218,6 +218,7 @@
     <None Include="res\shaders\Diffuse.shader" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\textures\blueshadow.jpg" />
     <Image Include="res\textures\grass.png" />
     <Image Include="res\textures\haoBicycle.jpg" />
     <Image Include="res\textures\haoRedShirt.png" />

@@ -129,8 +129,8 @@ int main(void)
 		Shader shader("res/shaders/Diffuse.shader");
 		shader.Bind();
 
-		int textures[6] = { 0,1,2,3,4,5 };
-		shader.SetUniform1iv("u_Textures", 6, textures);
+		int textures[7] = { 0,1,2,3,4,5,6 };
+		shader.SetUniform1iv("u_Textures", 7, textures);
 		shader.SetUniform4f("u_LightColor", 1.0f, 1.0f, 1.0f, 1.0f);
 		shader.SetUniform1f("u_Intensity", 1.5f);
 
@@ -140,6 +140,7 @@ int main(void)
 		Texture whiteTex("res/textures/white.png");
 		Texture metalTex("res/textures/metal.jpg");
 		Texture woodTex("res/textures/wood.jpg");
+		Texture blueTex("res/textures/blueshadow.jpg");
 
 		Camera camera(640, 480, glm::vec3(0.0f, 0.0f, 2.0f));
 		bool cameraEnabled = true;
@@ -148,7 +149,7 @@ int main(void)
 		Cube cube2(glm::vec3(2.0f, 0.0f, 0.0f), glm::vec3(2.0f, 0.2f, 0.2f), 4.0f);
 		Cube cube3(glm::vec3(4.0f, 0.0f, 0.0f), glm::vec3(2.0f, 0.2f, 0.2f), 4.0f);
 		Cube lightSrc(glm::vec3(1.0f, 3.0f, 1.0f), glm::vec3(0.3f), glm::vec4(1.0f));
-		Cube base(glm::vec3(0.0f), glm::vec3(0.2f), 1.0f);
+		Cube base(glm::vec3(-0.1f), glm::vec3(0.2f), 6.0f);
 		Cube target(glm::vec3(5.0f, 2.0f, 0.0f), glm::vec3(0.2f), 2.0f);
 		Cube ground(glm::vec3(-5.0f, -1.0f, -5.0f), glm::vec3(10.0f, 0.1f, 10.0f), 5.0f);
 
@@ -186,6 +187,7 @@ int main(void)
 			whiteTex.Bind(3);
 			metalTex.Bind(4);
 			woodTex.Bind(5);
+			blueTex.Bind(6);
 
 			if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
 				target.Translate(glm::vec3(0.0f, 0.0f, speed));

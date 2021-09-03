@@ -220,5 +220,8 @@
     <Image Include="res\textures\wood.jpg">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="res\textures\blueshadow.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

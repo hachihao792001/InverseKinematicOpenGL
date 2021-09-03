@@ -41,7 +41,7 @@ in vec4 v_CurrentPos;
 in float v_UseColor;
 in vec4 v_Color;
 
-uniform sampler2D u_Textures[6];
+uniform sampler2D u_Textures[7];
 uniform vec4 u_LightColor;
 uniform vec3 u_LightPos;
 uniform float u_Intensity;
